@@ -6,31 +6,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "piedra")
-public class Piedra {
+@Table(name = "tipo_piedra")
+public class TipoPiedra {
 	
 	@Id
-	@Column(name = "id_forma_evolucion")
-	private int idFormaEvolucion;
-	
 	@Column(name = "id_tipo_piedra")
 	private int idTipoPiedra;
+	
+	@Column(name = "nombre_piedra", length = 50, nullable = false)
+	private String nombrePiedra;
 
-	public Piedra() {
+	public TipoPiedra() {
 		super();
 	}
 
-	public Piedra(int idFormaEvolucion) {
+	public TipoPiedra(int idTipoPiedra) {
 		super();
-		this.idFormaEvolucion = idFormaEvolucion;
-	}
-
-	public int getIdFormaEvolucion() {
-		return idFormaEvolucion;
-	}
-
-	public void setIdFormaEvolucion(int idFormaEvolucion) {
-		this.idFormaEvolucion = idFormaEvolucion;
+		this.idTipoPiedra = idTipoPiedra;
 	}
 
 	public int getIdTipoPiedra() {
@@ -39,6 +31,14 @@ public class Piedra {
 
 	public void setIdTipoPiedra(int idTipoPiedra) {
 		this.idTipoPiedra = idTipoPiedra;
+	}
+
+	public String getNombrePiedra() {
+		return nombrePiedra;
+	}
+
+	public void setNombrePiedra(String nombrePiedra) {
+		this.nombrePiedra = nombrePiedra;
 	}
 	
 	

@@ -3,9 +3,9 @@ package com.pokemon.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.pokemon.model.Piedra;
+import com.pokemon.model.TipoPiedra;
 
 @Repository
-public interface PiedraRepository extends JpaRepository<Piedra, Integer>{
+public interface TipoPiedraRepository extends JpaRepository<TipoPiedra, Integer>{
 
 }
