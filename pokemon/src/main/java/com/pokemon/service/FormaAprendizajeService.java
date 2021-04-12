@@ -10,6 +10,4 @@ public interface FormaAprendizajeService {
 	public boolean updateFormaAprendizaje(FormaAprendizajeBean formaAprendizajeBean);//Update
 	public boolean deleteFormaAprendizaje(Integer idFormaAprendizaje);//Delete
 	public List<FormaAprendizajeBean> findAllFormaAprendizaje();//ReadAll
-	
-
 }

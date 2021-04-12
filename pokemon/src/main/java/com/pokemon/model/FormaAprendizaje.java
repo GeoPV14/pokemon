@@ -40,6 +40,5 @@ public class FormaAprendizaje {
 	public void setIdTipoAprendizaje(int idTipoAprendizaje) {
 		this.idTipoAprendizaje = idTipoAprendizaje;
 	}
-	
-	
+
 }
