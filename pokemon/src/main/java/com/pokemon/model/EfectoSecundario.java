@@ -36,9 +36,18 @@ public class EfectoSecundario {
 		return idEfectoSecundario;
 	}
 
+	public void setIdEfectoSecundario(String idEfectoSecundario) {
+		this.idEfectoSecundario = idEfectoSecundario;
+	}
+
 	public String getEfectoSecundario() {
 		return EfectoSecundario;
 	}
+
+	public void setEfectoSecundario(String efectoSecundario) {
+		EfectoSecundario = efectoSecundario;
+	}
+
 	
 	
 
